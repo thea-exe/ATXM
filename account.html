@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,7 +76,6 @@ ul {
 }
 li {
   float: left;
-  border-right: 1px solid #bbb;
 }
 li a {
   display: block;
@@ -105,25 +105,38 @@ li a:hover:not(.active) {
   margin: 4px 2px;
   cursor: pointer;
 }
+.btn-container {
+  text-align: center;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-group {
+  width: 200px;
+}
 .btn-group .button {
   border: 2px #7353cfff;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  float: left;
   border-radius: 16px;
-  margin-left: 80px;
-  text-align: center;
-  align-items: center;
 }
 .btn-group .button:not(:last-child) {
   border-right: none;
 }
 .btn-group .button:hover {
   background-color: #7353cfff;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  bottom: 0;
+  width: 100%;
 }
 </style>
 </head>
@@ -132,19 +145,18 @@ li a:hover:not(.active) {
   <h1>My Account</h1>
 </div>
 <ul>
-  <li><a href="home.html">Home</a></li>
-  <li><a href="index.html">Find Jobs</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#find_jobs">Find Jobs</a></li>
   <li><a href="#find_developers">Find Developers</a></li>
-  <li style="float:right"><a href="#account.html">My Account</a></li>
-  <li style="float:right"><a href="#list">Lists</a></li>
+  <li style="float:right"><a href="#my_account">My Account</a></li>
 </ul>
 <div class="row">
   <div class="column">
     <div class="card">
       <div class="container">
         <h3>Balance</h3>
-        <p>...</p>
-        <p>Currency</p>
+        <p>120.53212</p>
+        <p>ETH</p>
       </div>
     </div>
   </div>
@@ -152,8 +164,8 @@ li a:hover:not(.active) {
     <div class="card">
       <div class="container">
         <h3>Processing</h3>
-        <p>...</p>
-        <p>Currency</p>
+        <p>5.10751</p>
+        <p>ETH</p>
       </div>
     </div>
   </div>
@@ -161,14 +173,21 @@ li a:hover:not(.active) {
     <div class="card">
       <div class="container">
         <h3>Total Earned</h3>
-        <p>...</p>
-        <p>Currency</p>
+        <p>60.10023</p>
+        <p>ETH</p>
       </div>
     </div>
   </div>
- <div class="btn-group">
-  <button class="button">Go to Contract</button>
 </div>
+<div class="row">
+  <div class="btn-container">
+  <div class="btn-group">
+    <button class="button">Go to Contract</button>
+  </div>
+  </div>
+</div>
+<div class="footer">
+  <p1>Copyright © 2021 Contact Inc. All rights reserved</p1>
 </div>
 </body>
 </html>
